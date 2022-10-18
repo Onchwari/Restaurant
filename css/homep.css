@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-image: url("../images/main.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.header ul {
+  padding: 0;
+  margin: 0 0 0 400px;
+  list-style: none;
+}
+.header nav {
+  width: 100%;
+  overflow: auto;
+}
+.header nav ul li {
+  float: left;
+}
+.header nav ul li a {
+  width: 80px;
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-family: arial;
+  color: black;
+  text-align: center;
+}
+.header nav li a:hover {
+  color: gray;
+  text-transform: uppercase;
+}
+.logo {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.welcome {
+  color: white;
+  width: 300px;
+  height: 600px;
+  background-color: black;
+  opacity: 0.9;
+  padding: 55px;
+}
+.welcome h1 {
+  font-size: 60px;
+  text-align: center;
+}
+.welcome h3 {
+  text-align: center;
+  font-weight: normal;
+}
+.welcome h2 {
+  text-align: center;
+  font-weight: normal;
+  margin: 40px auto;
+}
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: -14px auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+button:hover {
+  background-color: white;
+  color: black;
+  
+}
+.button {
+  text-align: center;
+}
+
+.slide-container {
+  width: 800px;
+  height: 600px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  overflow: hidden;
+  text-align: center;
+}
+
+.image-container {
+  width: 4800px;
+  height: 600px;
+  position: relative;
+  transition: left 2s;
+}
+.slider-image {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+.button-container {
+  top: -30px;
+  position: relative;
+}
+.slider-button {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+#slider-image-1:target ~ .image-container {
+  left: 0px;
+}
+#slider-image-2:target ~ .image-container {
+  left: -800px;
+}
+#slider-image-3:target ~ .image-container {
+  left: -1600px;
+}
+#slider-image-4:target ~ .image-container {
+  left: -2400px;
+}
+#slider-image-5:target ~ .image-container {
+  left: -3200px;
+}
+#slider-image-6:target ~ .image-container {
+  left: -4000px;
+}
+
+.about {
+  color: white;
+  background-color: black;
+  margin-top: -622px;
+  margin-left: 800px;
+  width: 463px;
+  height: 600px;
+  padding: 0px;
+}
+.title {
+  font-family: "Allura", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px;
+}
+.about p {
+  text-align: center;
+  font-family: cursive;
+  padding-bottom: 25px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.959);
+  color: white;
+  width: 100%;
+  font-family: "Open Sans";
+  position: relative;
+}
+footer a {
+  text-decoration: none;
+  transition: 0.5s;
+  color: white;
+}
+footer ul li {
+  list-style-type: none;
+}
+.footer_info {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 50px 0;
+}
+.footer_info .footer_width {
+  padding: 0 100px;
+}
+.footer_info h2 {
+  margin-bottom: 20px;
+}
+.hours,
+.contact {
+  width: 20%;
+}
+.links {
+  width: 20%;
+}
+.links ul li a {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.links ul li a:hover {
+  color: black;
+}
+.contact h2 {
+  margin-left: 40px;
+}
+.contact ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.copy-right {
+  padding: 15px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.959);
+}
+@media screen and(max-width:992px) {
+  .hours,
+  .contact {
+    width: 35%;
+  }
+  .links {
+    width: 30%;
+  }
+}
+@media screen and(max-width:767px) {
+  .hours,
+  .contact,
+  .links {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer_info {
+    flex-direction: column;
+  }
+}
+.testimonials {
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.945);
+  color: white;
+  text-align: center;
+}
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.border {
+  width: 1000px;
+  height: 350px;
+  background: rgba(0, 0, 0, 0);
+  margin: 20px auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.testimonial {
+  background: white;
+  padding: 20px;
+  color: black;
+}
+.testimonial img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
